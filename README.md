@@ -1,2 +1,18 @@
-# Suggester-Academic-Plan-Generator
-The Suggested Academic Plan (SAP) Generator will be coded in Python. The Python code creates a diagram that will give students a suggested academic plan by pulling course names, course types, and course credits from a JSON file. To run the code, replace "academic_plan.json" with the actual .json file name you want to import data from. Make sure your .json file and python project are in the same directory. 
+# Suggested Academic Plan visualizer
+
+A Python learning project that reads course-plan JSON and renders four-year academic-plan diagrams with Matplotlib.
+
+## Run
+
+Use Python 3 in a virtual environment, then run from the repository folder:
+
+```sh
+python -m pip install -r requirements.txt
+python main.py
+```
+
+The script reads `IT-SAP.json`, `Cybersecurity-SAP.json`, and `CRIMJ-SAP.json` in that order. Close each plot to continue to the next one. To use different files, edit `json_filenames` in `main.py` and preserve the supplied JSON schema.
+
+## Scope
+
+This visualizes supplied plans; it does not generate schedules, validate prerequisites, or check current degree requirements. The 2023 sample data is historical, not academic advising. A graphical desktop is required to display the plots. Century Gothic is optional; Matplotlib may use a fallback font.
